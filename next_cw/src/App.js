@@ -24,6 +24,6 @@ function App() {
       </video> */}
     </> 
   );
-}
+} 
 
 export default App;
