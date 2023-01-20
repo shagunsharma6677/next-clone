@@ -5,12 +5,14 @@ import Banner from "../Bannner/Banner"
 import Cards from "../Cards/Cards"
 import Flash_card from '../Flash_card/Flash_card';
 import Card from 'react-bootstrap/Card';
-import our from "./video.mp4"
+import our from "./macBookPro.mp4"
+import our2 from "./mac-video-2.mp4"
+import { Fade } from 'react-reveal';
 import "./Mac.css"
 import Video_Banner from '../Video_Banner/Video_Banner';
 
 export default function Mac({ macAllModels }) {
-    console.log("fmkdfkdk",macAllModels)
+    console.log("fmkdfkdk", macAllModels)
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -43,20 +45,23 @@ export default function Mac({ macAllModels }) {
             </div>
             <div className="mac max-cont">
                 <div>
-                    <Banner head1="MacBook Pro" head2="Mover. Maker. Boundary breaker." price="1000" img="https://www.apple.com/v/mac/home/br/images/overview/hero/macbook_pro_13__e3r46kd69eoi_large.jpg" alt="mac" />
+                    <Banner head1="Mac mini" head2="More muscle. More hustle." price="1000" img="https://www.apple.com/v/mac/home/bs/images/overview/hero/mac_mini__d3310qb7lt6q_large.jpg" alt="mac" />
 
                 </div>
             </div>
 
             <div className="mac-banner-2">
                 <div className='mac-banner-cont container flex'>
+                    <Fade top>
+                        <h3>A gift for every wish</h3>
+                        <div>
+                            <p>Find something for everyone
+                                this Lunar New Year.</p>
+                        </div>
+                        <p>Shop the gift here </p>
+                    </Fade>
 
-                    <h3>A gift for every wish</h3>
-                    <div>
-                        <p>Find something for everyone
-                            this Lunar New Year.</p>
-                    </div>
-                    <p>Shop the gift here </p>
+
                 </div>
 
             </div>
@@ -80,29 +85,18 @@ export default function Mac({ macAllModels }) {
                 </div>
             </div>
 
-            {/* <div className="mac-flash-models container">
-                <h2>Ways to save. <span>Find what works for you.</span> </h2>
+            <div className="mac-flash-models container">
+                <h2>Shopping guides. <span>Can’t decide? Start here.</span> </h2>
                 <div className='mac-flash-2 flex'>
-                    <Card className='Flash-card-2 '>
-                        <Card.Body>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img className='flash-2-img' variant="top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMQ3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1645138486301" />
-                    </Card>
-                    <Card className='Flash-card-2'>
-                        <Card.Body>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMQ3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1645138486301" />
-                    </Card>
+                    <div className='mac-flash-model-card'>
+                        <p>Lorem ipsum dolor sit amet consectetur, </p>
+                    </div>
+                    <div className='mac-flash-model-card-2'>
+                        <p>Shop one on one with a Mac Specialist</p>
+                    </div>
+
                 </div>
-            </div> */}
+            </div>
 
             <div className="mac-access-models">
                 <h2>Accessories. <span> Made for Mac.</span> </h2>
@@ -122,62 +116,79 @@ export default function Mac({ macAllModels }) {
                 </div>
             </div>
 
+            <div className="mac-access-models container">
+                <h2>The Apple Store difference. <span> Even more reasons to shop with us.</span> </h2>
+                <div className='mac-video-2content'>
+                    <h3>Customise your Mac.</h3>
+                    <div>
+                        <p>Build it just way you want. Choose your memory, storage,graphics,even colous.</p>
+                    </div>
+                    <div className="access-cards-carol container">
+                        <Video_Banner video={our2} />
 
+                    </div>
 
-
-            <div className="mac-flash-models">
-                <h2>Ways to save. <span>Find what works for you.</span> </h2>
-                <div className="flash-cards-carol ">
-                    <Carousel responsive={responsive}>
-                        <Flash_card />
-                        <Flash_card />
-                        <Flash_card />
-                        <Flash_card />
-                        <Flash_card />
-                        <Flash_card />
-                        <Flash_card />
-                    </Carousel>;
                 </div>
+
             </div>
+
+
+
+
 
             <div className="mac-flash-models container">
                 <h2>Ways to save. <span>Find what works for you.</span> </h2>
                 <div className='mac-flash-2 flex'>
-                    <Card className='Flash-card-2 '>
-                        <Card.Body>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img className='flash-2-img' variant="top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMQ3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1645138486301" />
-                    </Card>
-                    <Card className='Flash-card-2'>
-                        <Card.Body>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMQ3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1645138486301" />
-                    </Card>
+                    <div style={{ backgroundImage: `url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-card-50-monthly-installments-202210?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664396475865")` }} className='mac-flash-model-card'>
+                        <p>Flexible ways to pay, Plus instant saving and No Cost EMI </p>
+                    </div>
+                    <div style={{ backgroundImage: `url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-education-202110?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1665016906770")`, backgroundRepeat: "no-repeat" }} className='mac-flash-model-card-2'>
+                        <p>Save ona new Mac with special education pricing.</p>
+                    </div>
+
                 </div>
             </div>
+
+
+
+
+            <div className="mac-flash-models">
+                <h2>Setup and support <span>Our Specialists are here to help</span> </h2>
+                <div className="flash-cards-carol ">
+                    <Carousel responsive={responsive}>
+                        <Flash_card head1="EASY DATA TRANSFER" head2="New Mac? See how easy it is to move your content over." url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-transfer-202206?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664999066585" />
+                        <Flash_card head1="APPLECARE" head2="Get accidental damage protection ans support from Apple" url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-applecare-plus-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1630175411000" />
+                        <Flash_card head1="ONLINE PERSONAL SESSION" head2="Get to know your new Mac From basics to top tips." url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-apps-202211?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1668101973558" />
+
+                        <Flash_card head1="WHY MAC" head2="Incredible power. Incredible simple" url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-why-mac-202206?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1665009188932" />
+                        <Flash_card head1="MACOS" head2="Works smarter. Plays harder. Goes further. Discover macOS Venture." url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-applecare-plus-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1630175411000" />
+                        <Flash_card head1="ICLOUD+" head2="Get more storage and great new ways to protect your privacy." url="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-icloud-202111?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1665105232677" />
+
+
+                    </Carousel>;
+                </div>
+            </div>
+
+
 
             <div className='bg_banner'>
                 <div style={{ backgroundImage: `url("https://www.apple.com/v/mac/home/bs/images/overview/get-more/business__dhhbnntkcwuq_large.jpg")` }} className='bg_banner_cont container'>
-                    <p className="head1">Apple At Work</p>
-                    <p className="head2">Get the power to take your business to the next level</p>
-                    <p className="head2">Learn about Apple at Work</p>
-                    <p className="head2">Learn more about Mac for business.</p>
+                    <Fade top>
+                        <p className="head1">Apple At Work</p>
+                        <p className="head2">Get the power to take your business to the next level</p>
+                        <p className="head2">Learn about Apple at Work</p>
+                        <p className="head2">Learn more about Mac for business.</p>
+                    </Fade>
                 </div>
             </div>
 
             <div className='bg_banner'>
-                <div style={{ backgroundImage: `url("https://www.apple.com/105/media/us/macbook-air-m1/2022/648bb92f-0bb4-452c-bfbc-2898641b22f5/anim/hero/large.mp4")` }} className='bg_banner_cont container'>
-                    <p className="head1">Apple and Education</p>
-                    <p className="head2">Empowering education and students to move the world forward</p>
-                    <p className="head2">Learn about Apple and education</p>
+                <div style={{ backgroundImage: `url("https://www.apple.com/v/mac/home/bs/images/overview/get-more/education__bq047y5fu7n6_large.jpg")` }} className='bg_banner_cont container'>
+                    <Fade top>
+                        <p className="head1">Apple and Education</p>
+                        <p className="head2">Empowering education and students to move the world forward</p>
+                        <p className="head2">Learn about Apple and education</p>
+                    </Fade>
                 </div>
             </div>
 

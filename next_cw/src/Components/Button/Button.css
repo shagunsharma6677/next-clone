@@ -1,0 +1,16 @@
+.cards-buy {
+    border: 1px solid green;
+    width: fit-content;
+    margin: auto;
+    padding: 12px 44px;
+    border-radius: 100px;
+    margin-top: 10px;
+    background-color: #2997ff;
+    
+  }
+  .cards-buy > a {
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+  }
+  
