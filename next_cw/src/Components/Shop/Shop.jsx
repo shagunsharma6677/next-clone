@@ -4,22 +4,18 @@ import "./Shop.css"
 
 export default function Shop() {
     const [totalPrice, settotalPrize] = React.useState(0)
-    const { buyItem } = React.useContext(AuthContext)
+    const { buyItem,total,handleDel,handleBuy } = React.useContext(AuthContext)
     console.log("buyitem", buyItem)
-    let total=0
+ 
 
-    const handleTotal = () => {
-        
-
-        for(let i=0; i<=buyItem.length-1; i++){
-            total+= Number(buyItem[i].price)
-        }
-        console.log(total)
+    const handleCheckout = () => {
+        window.alert("Payment Successfull")
     }
+   
 
     React.useEffect(() => {
         
-        handleTotal()
+        
 
     }, [])
     console.log(total)
@@ -41,10 +37,10 @@ export default function Shop() {
                                 <div className="shop-buy flex">
                                     <div className="flex shop-buy-item">
                                         <div>
-                                            <img src={item.image} alt="" />
+                                            <img src={item.buy.image} alt="" />
                                         </div>
 
-                                        <h3>{item.title}</h3>
+                                        <h3>{item.buy.title}</h3>
                                     </div>
                                     <div>
                                         <select className="quantity-select">
@@ -56,8 +52,8 @@ export default function Shop() {
                                         </select>
                                     </div>
                                     <div className="shop-price">
-                                        <p>{item.price}</p>
-                                        <div>
+                                        <p>{item.buy.price}</p>
+                                        <div onClick={() => handleDel(item)}>
                                             <a href="">Remove</a>
                                         </div>
 
@@ -70,7 +66,7 @@ export default function Shop() {
                             <div className="">
                                 <div className="Flex">
                                     <h4>Subtotal</h4>
-                                    <h4>100</h4>
+                                    <h4>{total}</h4>
                                 </div>
                                 <div className="Flex">
                                     <h4>Shipping</h4>
@@ -80,7 +76,7 @@ export default function Shop() {
 
                                 <div className="Flex">
                                     <h4>Total</h4>
-                                    <h4>1000</h4>
+                                    <h4>{total}</h4>
                                 </div>
                             </div>
 
@@ -88,7 +84,7 @@ export default function Shop() {
                                 <div className="checkout-btn">
                                     <a> Shop More</a>
                                 </div>
-                                <div className="checkout-btn">
+                                <div onClick={handleCheckout} className="checkout-btn">
                                     <a> Checkout</a>
                                 </div>
                             </div>
