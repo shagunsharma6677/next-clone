@@ -6,7 +6,7 @@ import Banner from "../Bannner/Banner"
 import Cards from "../Cards/Cards"
 import Flash_card from '../Flash_card/Flash_card';
 import Card from 'react-bootstrap/Card';
-import ouripad from "./ipad_video.mp4"
+import ouripad from "./ipadnew.mp4"
 import { Fade } from 'react-reveal';
 import "./Ipad.css"
 import Video_Banner from '../Video_Banner/Video_Banner';
@@ -41,13 +41,13 @@ export default function Ipad() {
                 <Video_Banner video={ouripad} />
             </div>
 
-            <div style={{ border: "1px solid green", padding: "100px", paddingTop: "0px" }} className='ipad-all-models container'>
+            <div style={{  padding: "100px", paddingTop: "0px" }} className='ipad-all-models container'>
                 <div style={{ display: "flex", justifyContent: "center", margin: "50px" }}>
                     <h3 style={{ fontSize: "56px", lineHeigth: "60px", fontWeight: "600" }}>Which iPad is right for you.</h3>
                 </div>
                 <div style={{ margin: "auto" }} className='ipad-all-models-cont flex'>
 
-                    <div style={{ border: "1px solid blue", width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
+                    <div style={{ width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
                         <div style={{ marginBottom: "10px" }} className='ipad-card-img-div'>
                             <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_pro__erf9x8mw04sy_large.png" width="100%" alt="" />
                         </div>
@@ -60,9 +60,9 @@ export default function Ipad() {
                         </div>
                     </div>
 
-                    <div style={{ border: "1px solid blue", width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
+                    <div style={{  width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
                         <div style={{ marginBottom: "10px" }} className='ipad-card-img-div'>
-                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_pro__erf9x8mw04sy_large.png" width="100%" alt="" />
+                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_air__bxjv33pk6nte_large.png" width="100%" alt="" />
                         </div>
                         <div style={{ textAlign: "center" }} className='ipad-card-cont-div'>
                             <h3 style={{ fontSize: "24px", lineHeight: "28px", fontWeight: "600", marginBottom: "10px" }}>iPad Pro</h3>
@@ -73,9 +73,9 @@ export default function Ipad() {
                         </div>
                     </div>
 
-                    <div style={{ border: "1px solid blue", width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
+                    <div style={{  width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
                         <div style={{ marginBottom: "10px" }} className='ipad-card-img-div'>
-                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_pro__erf9x8mw04sy_large.png" width="100%" alt="" />
+                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_10_9__f7p2wja0gwuy_large.png" width="100%" alt="" />
                         </div>
                         <div style={{ textAlign: "center" }} className='ipad-card-cont-div'>
                             <h3 style={{ fontSize: "24px", lineHeight: "28px", fontWeight: "600", marginBottom: "10px" }}>iPad Pro</h3>
@@ -86,9 +86,9 @@ export default function Ipad() {
                         </div>
                     </div>
 
-                    <div style={{ border: "1px solid blue", width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
+                    <div style={{  width: "15vw", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", margin: "10px", borderRadius: "20px" }} className='ipad-prod'>
                         <div style={{ marginBottom: "10px" }} className='ipad-card-img-div'>
-                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_pro__erf9x8mw04sy_large.png" width="100%" alt="" />
+                            <img src="https://www.apple.com/v/ipad/home/cc/images/overview/compare_ipad_10_2__fwgwy7jydtea_large.png" width="100%" alt="" />
                         </div>
                         <div style={{ textAlign: "center" }} className='ipad-card-cont-div'>
                             <h3 style={{ fontSize: "24px", lineHeight: "28px", fontWeight: "600", marginBottom: "10px" }}>iPad Pro</h3>
@@ -126,7 +126,7 @@ export default function Ipad() {
 
             <div className="ipad container">
                 <div>
-                    <Banner color={true} ptag={true} head1="Get more out of your iPad" head2="Bundle four apple services and enjoy more for less." price="1000" img="https://www.apple.com/in/ipad/home/images/overview/bundle__dcx98bi8r7o2_large.jpg" alt="mac" />
+                    <Banner bg2={true} color={true} ptag={true} head1="Get more out of your iPad" head2="Bundle four apple services and enjoy more for less." price="1000" img="https://www.apple.com/in/ipad/home/images/overview/bundle__dcx98bi8r7o2_large.jpg" alt="mac" />
 
                 </div>
             </div>

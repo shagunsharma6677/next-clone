@@ -1,11 +1,5 @@
 import React from "react"
-
-
 export const AuthContext = React.createContext()
-
-
-
-
 
 export default function AuthContextProvider({ children }) {
     const [macAllModel, setMacAllModel] = React.useState([])
@@ -13,7 +7,17 @@ export default function AuthContextProvider({ children }) {
     const [macSave, setMacSave] = React.useState([])
     const [buyItem, setBuyItem] = React.useState([])
     const [total, setTotal] = React.useState(0)
+    console.log("buy", buyItem)
 
+    const totalPrice = () => {
+        let ourTotal = 0
+        for (let i = 0; i <= buyItem.length - 1; i++) {
+            ourTotal += Number(buyItem[i]["price"])
+            console.log("here", ourTotal)
+        }
+        setTotal(ourTotal)
+        console.log("total",total)
+    }
     const getMac = async (url) => {
         const response = await fetch(url)
         const res = await response.json()
@@ -26,52 +30,62 @@ export default function AuthContextProvider({ children }) {
         console.log(res, "getbuy")
         setBuyItem(res)
     }
+    const getMacAcess = async (url) => {
+        const response = await fetch(url)
+        const res = await response.json()
+        console.log(res, "getbuy")
+        setMacAccess(res)
+    }
+
+    const getMacSaveD = async (url) => {
+        const response = await fetch(url)
+        const res = await response.json()
+        console.log(res, "getbuy")
+        setMacSave(res)
+    }
 
 
     const handleBuy = async (buy) => {
         console.log("buy", buy)
-        let add = await fetch(`http://localhost:8080/shop`, {
+        let add = await fetch(`https://next-our.onrender.com/shop`, {
             method: "POST",
-            body: JSON.stringify({
-                buy
-            }),
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json"
             },
+            body: JSON.stringify(buy)
 
         })
         let res = await add.json()
-        getBuy(`http://localhost:8080/shop`)
+        console.log(res)
+        getBuy(`https://next-our.onrender.com/shop`)
         setTotal(total + Number(buy.price))
+        totalPrice()
         console.log(total)
-        // setBuyItem([...buyItem, buy])
+        setBuyItem([...buyItem, buy])
     }
-
-    // setTotal(total + Number(buy.price))
-    // console.log(total)
-    // setBuyItem([...buyItem, buy])
-    // console.log("buyiem", buyItem)
-
 
     const handleDel = async (del) => {
-        let add = await fetch(`http://localhost:8080/shop/${del.id}`, {
+        let add = await fetch(`https://next-our.onrender.com/shop/${del}`, {
             method: 'DELETE', // Method itself
             headers: {
-                'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
+                "Content-Type": "application/json", // Indicates the content 
             },
         })
+        console.log("del", add)
         getBuy(`http://localhost:8080/shop`)
+        totalPrice()
 
     }
-
+    // https://next-our.onrender.com/
     React.useEffect(() => {
-        getMac(`http://localhost:8080/macAllModels`)
-        getBuy(`http://localhost:8080/shop`)
+        getMac(`https://next-our.onrender.com/macAllModels`)
+        getBuy(`https://next-our.onrender.com/shop`)
+        getMacAcess(`https://next-our.onrender.com/macAccess`)
+        getMacSaveD(`https://next-our.onrender.com/saveOn`)
+        totalPrice()
 
-        // getData()
     }, [])
-    // const { macAllModels, macAccess, macWayToSave } = data
-    // console.log(data)
+   
 
     return <><AuthContext.Provider value={{ macAllModel, buyItem, total, handleDel, handleBuy, macAccess, macSave }}>{children}
 

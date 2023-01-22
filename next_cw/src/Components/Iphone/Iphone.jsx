@@ -1,17 +1,17 @@
 import Carousel from 'react-multi-carousel';
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
-import Access_cards from '../Access_cards/Access_cards';
+// import Access_cards from '../Access_cards/Access_cards';
 import Banner from "../Bannner/Banner"
-import Cards from "../Cards/Cards"
+// import Cards from "../Cards/Cards"
 import Flash_card from '../Flash_card/Flash_card';
-import Card from 'react-bootstrap/Card';
-// import ouripad from "./ipad_video.mp4"
-import { Fade } from 'react-reveal';
+// import Card from 'react-bootstrap/Card';
+import ouriphone from "./iphonenew.mp4"
+// import { Fade } from 'react-reveal';
 import "./Iphone.css"
 import Video_Banner from '../Video_Banner/Video_Banner';
 import Button from '../Button/Button';
-import Grid_Banner from '../Grid_Banner/Grid_Banner';
+// import Grid_Banner from '../Grid_Banner/Grid_Banner';
 import { AuthContext } from '../Auth-Router/AuthContext';
 
 export default function Iphone() {
@@ -38,10 +38,9 @@ export default function Iphone() {
     return <>
         <section className="ipad-sec">
             <div className=''>
-                {/* <Video_Banner video={ouripad} /> */}
+                <Video_Banner video={ouriphone} />
             </div>
-
-            <div style={{ border: "1px solid green", padding: "100px", paddingTop: "0px" }} className='ipad-all-models container'>
+            <div style={{ padding: "100px", paddingTop: "0px" }} className='ipad-all-models container'>
                 <div style={{ display: "flex", justifyContent: "center", margin: "50px" }}>
                     <h3 style={{ fontSize: "56px", lineHeigth: "60px", fontWeight: "600", boxSizing: 'border-box' }}>Which iPad is right for you.</h3>
                 </div>
@@ -136,8 +135,6 @@ export default function Iphone() {
 
                 </div>
             </div>
-
-
             <div className="ipad-flash-models container">
                 <h2>Ways to save. <span>Find what works for you.</span> </h2>
                 <div className='ipad-flash-2 flex'>
@@ -150,10 +147,6 @@ export default function Iphone() {
 
                 </div>
             </div>
-
-
-
-
             <div className="ipad-flash-models">
                 <h2>Setup and support <span>Our Specialists are here to help</span> </h2>
                 <div className="flash-cards-carol ">
@@ -163,12 +156,6 @@ export default function Iphone() {
                     </Carousel>;
                 </div>
             </div>
-
-
-
-       
-
-
             <div className="ipad container">
                 <div>
                     <Banner bg2={true} bg={true} color={true} ptag={true} head1="Get more out of your Apple" head2="Magic runs in the family." price="1000" img="https://www.apple.com/v/iphone/home/bk/images/overview/accessories/airpods-pro-fall-22/airpods__eb24cvhoe26a_large.jpg" alt="mac" />
@@ -189,10 +176,7 @@ export default function Iphone() {
 
                 </div>
             </div>
-
-
         </section>
-
 
     </>
 } 

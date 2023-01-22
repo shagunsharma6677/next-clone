@@ -1,8 +1,8 @@
 nav {
   margin: auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* padding: 10px; */
-  background-color: black;
+  background-color: #272729;
   /* background-color: #161617; */
   color: white;
 }
