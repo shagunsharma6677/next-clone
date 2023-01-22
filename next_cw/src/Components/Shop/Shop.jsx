@@ -1,6 +1,29 @@
+import { AuthContext } from "../Auth-Router/AuthContext"
+import React from "react"
 import "./Shop.css"
 
 export default function Shop() {
+    const [totalPrice, settotalPrize] = React.useState(0)
+    const { buyItem } = React.useContext(AuthContext)
+    console.log("buyitem", buyItem)
+    let total=0
+
+    const handleTotal = () => {
+        
+
+        for(let i=0; i<=buyItem.length-1; i++){
+            total+= Number(buyItem[i].price)
+        }
+        console.log(total)
+    }
+
+    React.useEffect(() => {
+        
+        handleTotal()
+
+    }, [])
+    console.log(total)
+
     return <>
         <div className="shop-container container">
             <div className="max-cont shop-cont">
@@ -12,83 +35,36 @@ export default function Shop() {
 
                 <div className="shop-list-container">
                     <div className="shop-list">
-                        <div className="shop-buy flex">
-                            <div className="flex shop-buy-item">
-                                <div>
-                                    <img src="https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mba__fchj615oz0yi_large.png" alt="" />
+
+                        {buyItem?.map((item) => {
+                            return (
+                                <div className="shop-buy flex">
+                                    <div className="flex shop-buy-item">
+                                        <div>
+                                            <img src={item.image} alt="" />
+                                        </div>
+
+                                        <h3>{item.title}</h3>
+                                    </div>
+                                    <div>
+                                        <select className="quantity-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="more">more</option>
+                                        </select>
+                                    </div>
+                                    <div className="shop-price">
+                                        <p>{item.price}</p>
+                                        <div>
+                                            <a href="">Remove</a>
+                                        </div>
+
+                                    </div>
                                 </div>
-
-                                <h3>Macbook Air with M1 vhip</h3>
-                            </div>
-                            <div>
-                                <select className="quantity-select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="more">more</option>
-                                </select>
-                            </div>
-                            <div className="shop-price">
-                                <p> 1000</p>
-                                <div>
-                                    <a href="">Remove</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="shop-buy flex">
-                            <div className="flex shop-buy-item">
-                                <div>
-                                    <img src="https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mba__fchj615oz0yi_large.png" alt="" />
-                                </div>
-
-                                <h3>Macbook Air with M1 vhip</h3>
-                            </div>
-                            <div>
-                                <select className="quantity-select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="more">more</option>
-                                </select>
-                            </div>
-                            <div className="shop-price">
-                                <p> 1000</p>
-                                <div>
-                                    <a href="">Remove</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="shop-buy flex">
-                            <div className="flex shop-buy-item">
-                                <div>
-                                    <img src="https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mba__fchj615oz0yi_large.png" alt="" />
-                                </div>
-
-                                <h3>Macbook Air with M1 vhip</h3>
-                            </div>
-                            <div>
-                                <select className="quantity-select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="more">more</option>
-                                </select>
-                            </div>
-                            <div className="shop-price">
-                                <p> 1000</p>
-                                <div>
-                                    <a href="">Remove</a>
-                                </div>
-
-                            </div>
-                        </div>
+                            )
+                        })}
 
                         <div className="shop-total">
                             <div className="">

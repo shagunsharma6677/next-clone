@@ -59,25 +59,19 @@
             },
             {
                 "id": 4,
-                "title": "Studio Display - Standard glass-Tilt-adjustable stand ",
+                "title": "Studio Display stand ",
                 "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1646446502337",
                 "price": "$1599"
             },
             {
                 "id": 5,
-                "title": "Magic Keyboard with Touch ID and Numeric Keypad for Mac",
+                "title": "Magic Keyboard with Touch ID for Mac",
                 "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMR3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645719947833",
                 "price": "$199"
             },
             {
-                "id": 6,
-                "title": "Magic Mouse - Black Multi-Touch Surface",
-                "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645138486301",
-                "price": "$99"
-            },
-            {
                 "id": 7,
-                "title": "Magic Trackpad = Black Multi-Touch Surface",
+                "title": "Magic Trackpad",
                 "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMP3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645136899926",
                 "price": "$199"
             }
@@ -90,7 +84,7 @@
             },
             {
                 "id": 2,
-                "title": "Pay 0% APR over 12 month when you choose to check out with Apple Card Monthly Installments",
+                "title": "Pay 0% APR over 12 month on Monthly Installments",
                 "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-50-monthly-installments-202210?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664396475865",
                 "price": "$99"
             },
@@ -102,7 +96,30 @@
             },
             {
                 "id": 4,
-                "title": "Pay 0% APR over 12 month when you choose to check out with Apple Card Monthly Installments",
+                "title": "Pay 0% APR over 12 month on Monthly Installments",
+                "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-50-monthly-installments-202210?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664396475865",
+                "price": "$99"
+            },
+            {
+                "id": 1,
+                "title": "Trade in your device,get credit toward a new one.",
+                "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-50-tradein-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1651768767939"
+            },
+            {
+                "id": 2,
+                "title": "Pay 0% APR over 12 month on Monthly Installments",
+                "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-50-monthly-installments-202210?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664396475865",
+                "price": "$99"
+            },
+            {
+                "id": 3,
+                "title": "Get 3% back in Daily Cash with Apple Card.",
+                "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-50-apple-card-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1625760821000",
+                "price": "$99"
+            },
+            {
+                "id": 4,
+                "title": "Pay 0% APR over 12 month on Monthly Installments",
                 "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-50-monthly-installments-202210?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664396475865",
                 "price": "$99"
             }

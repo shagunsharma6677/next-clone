@@ -9,6 +9,9 @@ import Shop from "./Components/Shop/Shop";
 import Grid_Banner from "./Components/Grid_Banner/Grid_Banner";
 import Ipad from "./Components/Ipad/Ipad"
 import Anim_Page from "./Components/Mac/Anim_Page";
+import CarouselCards from "./Components/Responsive_cards/Responsive_Cards";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
@@ -32,6 +35,8 @@ function App() {
       {/* <Tv/> */}
       {/* <Music/> */}
       {/* <Anim_Page/> */}
+      {/* <CarouselCards/> */}
+  
       
     </> 
   );
