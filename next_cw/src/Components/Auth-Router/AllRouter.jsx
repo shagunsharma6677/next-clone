@@ -6,6 +6,7 @@ import Ipad from "../Ipad/Ipad"
 import Watch from "../Watch/Watch"
 import Tv from "../Tv/Tv"
 import Music from "../Music/Music"
+import Shop from "../Shop/Shop"
 export default function AllRoutes() {
     return <>
         <Routes>
@@ -13,9 +14,9 @@ export default function AllRoutes() {
             <Route path="/mac" element={<Mac />} />
             <Route path="/ipad" element={<Ipad />} />
             <Route path="/iphone" element={<Iphone />} />
-            <Route path="/watch" element={<Watch />} />
-            <Route path="/tv" element={<Tv />} />
-            <Route path="/music" element={<Music />} />
+            <Route path="/shop" element={<Shop />} />
+
+          
         </Routes>
     </>
 }

@@ -29,7 +29,7 @@
 }
 .mac-all-models {
   margin: auto;
-  margin-left: 20vw;
+  margin-left: 15vw;
 }
 .cards-carol > Carousel > Cards {
   margin-right: 25px;
@@ -147,10 +147,10 @@
   /* border-radius: 100px; */
   /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
-    justify-content: center;
-    margin: auto;
+  justify-content: center;
+  margin: auto;
 }
-.flash-2-img{
+.flash-2-img {
   border: 1px solid blue;
 }
 
@@ -159,14 +159,13 @@
   border: 1px solid green;
   justify-content: center;
   background-color: black;
-  
 }
 .mac-video > video {
   width: 67vw;
   margin: auto;
   /* object-fit: contain; */
 }
-.bg_banner_cont{
+.bg_banner_cont {
   /* background-image: url("https://www.apple.com/v/mac/home/bs/images/overview/get-more/business__dhhbnntkcwuq_large.jpg"); */
   width: 1200px;
   height: 70vh;
@@ -176,22 +175,22 @@
   flex-direction: column;
   justify-content: center;
 }
-.bg_banner_cont > p{
+.bg_banner_cont > p {
   color: white;
 }
-.access-cards-carol{
-  padding: 20px;
+.access-cards-carol {
+  /* padding: 20px; */
 }
-.flash-cards-carol{
+.flash-cards-carol {
   padding: 20px;
 }
 /* 66666666666666666666666666666666666666666666666 */
-.mac-flash-2{
+.mac-flash-2 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.mac-flash-model-card{
+.mac-flash-model-card {
   border: 1px solid red;
   padding: 20px;
   width: 500px;
@@ -199,22 +198,19 @@
   background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-compare-models-202203?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664611622989");
   transition: transform 500ms ease-in-out;
 }
-.mac-flash-model-card:hover{
+.mac-flash-model-card:hover {
   transform: scale(1.05);
-
-
 }
 .mac-flash-model-card > p {
   font-size: 28px;
   line-height: 32px;
   font-weight: 600;
   text-align: left;
-
 }
-.mac-flash-model-card-img > img{
+.mac-flash-model-card-img > img {
   width: 100%;
 }
-.mac-flash-model-card-2{
+.mac-flash-model-card-2 {
   border: 1px solid red;
   padding: 20px;
   width: 500px;
@@ -222,32 +218,51 @@
   background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-50-specialist-help-202211?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1671235795870");
   transition: transform 500ms ease-in-out;
 }
-.mac-flash-model-card-2:hover{
+.mac-flash-model-card-2:hover {
   transform: scale(1.05);
-
-
 }
 .mac-flash-model-card-2 > p {
   font-size: 28px;
   line-height: 32px;
   font-weight: 600;
   text-align: left;
-
 }
-.mac-video-2content{
+.mac-video-2content {
   text-align: center;
 }
-.mac-video-2content > h3{
+.mac-video-2content > h3 {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 600;;
-
+  font-weight: 600;
 }
-.mac-video-2content > div > p{
+.mac-video-2content > div > p {
   font-size: 17px;
   line-height: 25px;
   font-weight: 400;
+}
+.react__slick__slider__parent {
+  position: relative;
+}
 
+.react__slick__slider__parent .slick-prev,
+.react__slick__slider__parent .slick-next {
+  position: absolute;
+  top: 50%;
+}
+.react__slick__slider__parent .slick-prev {
+  color: black;
+  z-index: 1;
+}
+.react__slick__slider__parent .slick-next {
+  border-radius: 50%;
+  color: black;
+  z-index: 1;
+}
 
-
+.react__slick__slider__parent .slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.cards-carol{
+  box-sizing: border-box;
 }

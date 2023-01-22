@@ -6,6 +6,7 @@
 .shop-buy-item {
   align-items: center;
   justify-content: center;
+  width: 30vw;
 }
 .shop-buy-item > h3 {
   font-size: 28px;

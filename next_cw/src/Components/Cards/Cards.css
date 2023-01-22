@@ -1,9 +1,12 @@
 .Cards-cont {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 350px;
-  height: 475px;
-  /* padding: 40px; */
+  height: 500px;
+  box-sizing: border-box;
+  padding: 50px;
+  /* padding-top: 0; */
   justify-content: center;
+  box-sizing: border-box;
   align-items: center;
   margin: 20px;
   border-radius: 20px;
@@ -17,9 +20,9 @@
 }
 
 .cards-img-div {
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .cards-img-div > img {
-  width: 300px;
+  width: 275px;
 }
