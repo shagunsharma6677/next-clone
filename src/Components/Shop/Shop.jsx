@@ -1,23 +1,24 @@
 import { AuthContext } from "../Auth-Router/AuthContext"
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import "./Shop.css"
 
 export default function Shop() {
     const [totalPrice, settotalPrize] = React.useState(0)
     const { buyItem,total,handleDel,handleBuy } = React.useContext(AuthContext)
-    console.log("buyitem", buyItem)
+    // console.log("buyitem", buyItem[0].buy.title)
+    console.log(total)
+
+    const nav = useNavigate()
  
 
     const handleCheckout = () => {
         window.alert("Payment Successfull")
+        nav("/")
     }
-   
-
-    React.useEffect(() => {
+    // React.useEffect(() => {
         
-        
-
-    }, [])
+    // }, [])
     console.log(total)
 
     return <>
@@ -32,15 +33,15 @@ export default function Shop() {
                 <div className="shop-list-container">
                     <div className="shop-list">
 
-                        {buyItem?.map((item) => {
+                        {buyItem?.map((el) => {
                             return (
-                                <div className="shop-buy flex">
-                                    <div className="flex shop-buy-item">
+                                <div key={el.id} className="shop-buy flex">
+                                    <div className="flex shop-buy-el">
                                         <div>
-                                            <img src={item.buy.image} alt="" />
+                                            <img src={el?.image} alt="" />
                                         </div>
 
-                                        <h3>{item.buy.title}</h3>
+                                        <h3>{el?.title}</h3>
                                     </div>
                                     <div>
                                         <select className="quantity-select">
@@ -52,8 +53,8 @@ export default function Shop() {
                                         </select>
                                     </div>
                                     <div className="shop-price">
-                                        <p>{item.buy.price}</p>
-                                        <div onClick={() => handleDel(item)}>
+                                        <p>{el?.price}</p>
+                                        <div onClick={() => handleDel(el.id)}>
                                             <a href="">Remove</a>
                                         </div>
 

@@ -1,7 +1,7 @@
 .ipad {
-  background-color: black;
+  /* background-color: black; */
   height: 70vh;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
 }
 .cards-carol {
   /* width: 50vw; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: auto;
   /* padding: 20px; */
   /* width: 90vw; */
@@ -128,7 +128,7 @@
 }
 
 .ipad-flash-2 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* width: 420px; */
   height: 500px;
   /* border: 1px solid green; */
@@ -139,7 +139,7 @@
 }
 
 .Flash-card-2 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 460px;
   height: 500px;
   /* border: 1px solid green; */
@@ -147,26 +147,25 @@
   /* border-radius: 100px; */
   /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
-    justify-content: center;
-    margin: auto;
+  justify-content: center;
+  margin: auto;
 }
-.flash-2-img{
-  border: 1px solid blue;
+.flash-2-img {
+  /* border: 1px solid blue; */
 }
 
 .ipad-video {
   /* height: 100px; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   justify-content: center;
   background-color: black;
-  
 }
 .ipad-video > video {
   width: 67vw;
   margin: auto;
   /* object-fit: contain; */
 }
-.bg_banner_cont{
+.bg_banner_cont {
   /* background-image: url("https://www.apple.com/v/ipad/home/bs/images/overview/get-more/business__dhhbnntkcwuq_large.jpg"); */
   width: 1200px;
   height: 70vh;
@@ -176,83 +175,79 @@
   flex-direction: column;
   justify-content: center;
 }
-.bg_banner_cont > p{
+.bg_banner_cont > p {
   color: white;
 }
-.access-cards-carol{
+.access-cards-carol {
   padding: 20px;
 }
-.flash-cards-carol{
+.flash-cards-carol {
   padding: 20px;
 }
 /* 66666666666666666666666666666666666666666666666 */
-.ipad-flash-2{
+.ipad-flash-2 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.ipad-flash-model-card{
-  border: 1px solid red;
+.ipad-flash-model-card {
+  /* border: 1px solid red; */
   padding: 20px;
   width: 500px;
   height: 500px;
   background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-card-50-compare-models-202203?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1664611622989");
   transition: transform 500ms ease-in-out;
 }
-.ipad-flash-model-card:hover{
+.ipad-flash-model-card:hover {
   transform: scale(1.05);
-
-
 }
 .ipad-flash-model-card > p {
   font-size: 28px;
   line-height: 32px;
   font-weight: 600;
   text-align: left;
-
 }
-.ipad-flash-model-card-img > img{
+.ipad-flash-model-card-img > img {
   width: 100%;
 }
-.ipad-flash-model-card-2{
-  border: 1px solid red;
+.ipad-flash-model-card-2 {
+  /* border: 1px solid red; */
   padding: 20px;
   width: 500px;
   height: 500px;
   background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-card-50-specialist-help-202211?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1671235795870");
   transition: transform 500ms ease-in-out;
 }
-.ipad-flash-model-card-2:hover{
+.ipad-flash-model-card-2:hover {
   transform: scale(1.05);
-
-
 }
 .ipad-flash-model-card-2 > p {
   font-size: 28px;
   line-height: 32px;
   font-weight: 600;
   text-align: left;
-
 }
-.ipad-video-2content{
+.ipad-video-2content {
   text-align: center;
 }
-.ipad-video-2content > h3{
+.ipad-video-2content > h3 {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 600;;
-
+  font-weight: 600;
 }
-.ipad-video-2content > div > p{
+.ipad-video-2content > div > p {
   font-size: 17px;
   line-height: 25px;
   font-weight: 400;
-
-
-
+}
+.ipad-prod {
+  transition: transform 500ms ease-in-out;
+}
+.ipad-prod:hover {
+  transform: scale(1.05);
 }
 /* 666666666666666666666666666666666666666666666666666666666666 */
-.ipad-grid-banner{
+.ipad-grid-banner {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }

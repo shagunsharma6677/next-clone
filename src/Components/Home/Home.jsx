@@ -6,7 +6,7 @@ import Grid_Banner from "../Grid_Banner/Grid_Banner";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Home.css"
 import { AuthContext } from "../Auth-Router/AuthContext";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 export default function Home() {
 
     const { Auth } = React.useContext(AuthContext)
@@ -41,7 +41,7 @@ export default function Home() {
                     <Grid_Banner head1="IPhone 14 Pro" head2="Pro Beyond" img="https://www.apple.com/v/home/aw/images/heroes/apple-watch-series-8/hero_apple_watch_series_8__bjc1ok5mkjua_large.jpg" />
                 </div>
                 <div>
-                    <Grid_Banner head1="IPhone 14 Pro" head2="Pro Beyond" img="https://www.apple.com/v/home/aw/images/heroes/apple-watch-series-8/hero_apple_watch_series_8__bjc1ok5mkjua_large.jpg" />
+                    <Grid_Banner bg={true} head1="IPhone 14 Pro" head2="Pro Beyond" img="https://www.apple.com/v/home/ax/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg" />
                 </div>
             </div>
 

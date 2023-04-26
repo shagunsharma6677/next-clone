@@ -29,11 +29,11 @@ export default function Mac() {
     const set = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        speed: 2000,
+        speed: 5000,
         autoplaySpeed: 2000,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -121,7 +121,7 @@ export default function Mac() {
                 <div className='mac-video-2content'>
                     <h3>Customise your Mac.</h3>
                     <div>
-                        <p>Build it just way you want. Choose your memory, storage,graphics,even colous.</p>
+                        <p style={{fontSize:"16px", fontWeight:"600"}}>Build it just way you want. Choose your memory, storage,graphics,even colous.</p>
                     </div>
                     <div className="access-cards-carol">
                         <Video_Banner video={our2} />
